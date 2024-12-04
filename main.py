@@ -1,13 +1,13 @@
 num=int(input("Введите кол-во строк"))
-a=list()
-b=list()
+str_list=[]
+new_list=[]
 if(num<0):
     print("error")
 else:
     for i in range(num):
-        a.append(str(input("Введите строку")))
+        str_list.append(input("Введите строку"))
     for i in range(num):
-            a[i]=a[i].split(" ")
+            str_list[i]=str_list[i].split(" ")
     for i in range(num):
-        b.extend(a[i])
-    print(len(set(b)))
+        new_list.extend(str_list[i])
+    print(len(set(new_list)))
